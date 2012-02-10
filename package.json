@@ -13,8 +13,7 @@
     },
     "dependencies": {
         "nconf": "0.5.x",
-        "logme": "0.3.x",
-        "HID": "0.0.1"
+        "logme": "0.3.x"
     },
     "devDependencies": {}
 }
