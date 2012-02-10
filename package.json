@@ -1,0 +1,20 @@
+{
+    "author": "Per Ejeklint <ejeklint@me.com>",
+    "name": "weathernode",
+    "description": "Weather data logger compatible with Oregon Scientific USB weather stations",
+    "keywords": ["weather", "HID", "oregon"],
+    "version": "0.1.0",
+    "repository": {
+        "url": ""
+    },
+    "main": "index.js",
+    "engines": {
+        "node": "0.6.x"
+    },
+    "dependencies": {
+        "nconf": "0.5.x",
+        "logme": "0.3.x",
+        "HID": "0.0.1"
+    },
+    "devDependencies": {}
+}
