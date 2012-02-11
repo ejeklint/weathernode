@@ -2,12 +2,12 @@
     "author": "Per Ejeklint <ejeklint@me.com>",
     "name": "weathernode",
     "description": "Weather data logger compatible with Oregon Scientific USB weather stations",
-    "keywords": ["weather", "HID", "oregon"],
+    "keywords": ["weather", "HID", "oregon", "WMR100", "WMRS200", "WMR88A", "RMS600A"],
     "version": "0.1.0",
     "repository": {
         "url": ""
     },
-    "main": "index.js",
+    "main": "server.js",
     "engines": {
         "node": "0.6.x"
     },
