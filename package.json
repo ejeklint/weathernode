@@ -13,7 +13,8 @@
     },
     "dependencies": {
         "nconf": "0.5.x",
-        "logme": "0.3.x"
+        "logme": "0.3.x",
+        "pubnub": "*"
     },
     "devDependencies": {}
 }
