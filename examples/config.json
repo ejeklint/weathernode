@@ -1,4 +1,18 @@
 {
-	"pachubeFeed": "12345",
-	"pachubeApiKey": "abc123..."
-} 
+	"cosm": {
+		"feed": "12345",
+		"apiKey": "abc123..."
+	},
+	"pubnub": {
+		"channel": "xyz",
+		"publishKey": "pub-abc123",
+		"subscribeKey": "sub-xyz345",
+		"secretKey": "sec-ohlala"
+	},
+	"pusher": {
+		"channel": "valar",
+		"appId": "12345",
+		"key": "abc123",
+		"secret": "xyzohlala"
+	}
+}
