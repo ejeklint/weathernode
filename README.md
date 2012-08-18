@@ -6,7 +6,7 @@ This weather data logger is compatible with Oregon Scientific USB weather statio
 
 First build node-hid which is a dependency that must be built by hand (for now). Clone https://github.com/hanshuebner/node-hid and build it according to his instructions.
 
-Copy the resulting `node-hid/build/Release/HID.node` file to your `node_modules`. Then go back to weathernode and
+Copy the resulting `node-hid/build/Release/HID.node` file to your `node_modules`. Then go back to **weathernode** and
 
     npm install
 
@@ -23,3 +23,5 @@ Or even better, run it with [forever](https://github.com/indexzero/forever) and 
     forever start -o log.txt --spinSleepTime 1000 server.js
 
 meaning that it starts, logs to log.txt and wait 1000 ms before restarting after a termination. This works very well for me.
+
+**wheathernode** is compatible with node 0.6 and higher.
