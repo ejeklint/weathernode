@@ -1,8 +1,17 @@
 # Weather data logger
 
-This weather data logger is compatible with Oregon Scientific USB weather stations, like WMR100, WMRS200 and a couple of others. It tries to log same data as Oregon Scientific's own software, which is Windows only and just awful, but as the data protocol is available only under NDA, and they refused to let me sign one, this implementation is based on [reversed engineering](https://github.com/ejeklint/WLoggerDaemon/blob/master/Station_protocol.md) so some tiny things might differ.
+This weather data logger is compatible with Oregon Scientific USB weather stations, like WMR100, WMRS200 and a couple of others. It tries to log same data as Oregon Scientific's own software, which is Windows only and just awful, but as the data protocol is available only under NDA, and they refused to let me get it, this implementation is based on [reversed engineering](https://github.com/ejeklint/WLoggerDaemon/blob/master/Station_protocol.md) so some tiny things might differ.
 
-**weathernode** uses the excellent [node-hid](https://github.com/hanshuebner/node-hid) by Hans Hübner. It's the perfect thing to handle USB HID things in node.
+**weathernode** uses the excellent [node-hid](https://github.com/hanshuebner/node-hid) by Hans Hübner. It's the perfect thing to handle USB HID devices in node.
+
+# Requirement
+
+* Interest in weather data
+* An Oregon Scientific weather station with USB that acts as a HID device, like WMR100, RMS300 or WMRS200
+* [node.js](http://nodejs.org) version >= 0.8 and npm (bundled with node.js)
+* Build tools. On OS X you need to install [Xcode](https://developer.apple.com/xcode/) to build [hidapi](https://github.com/signal11/hidapi)
+* An account at [Cosm](https://cosm.com) if you want to log data to it
+* An account at [Pusher](http://pusher.com) or [Pubnub](http://www.pubnub.com) if you want to push real time updates through websockets.
 
 # Installation
 
