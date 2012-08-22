@@ -9,13 +9,14 @@
     },
     "main": "server.js",
     "engines": {
-        "node": "0.6.x"
+        "node": "0.8.x"
     },
     "dependencies": {
         "nconf": "0.5.x",
         "logme": "0.3.x",
         "pubnub": "*",
-        "node-pusher": "*"
+        "node-pusher": "*",
+        "node-hid": "0.1.1"
     },
     "devDependencies": {}
 }
