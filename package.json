@@ -1,22 +1,31 @@
 {
-    "author": "Per Ejeklint <ejeklint@me.com>",
-    "name": "weathernode",
-    "description": "Weather data logger compatible with Oregon Scientific USB weather stations",
-    "keywords": ["weather", "HID", "oregon", "WMR100", "WMRS200", "WMR88A", "RMS600A"],
-    "version": "0.1.0",
-    "repository": {
-        "url": ""
-    },
-    "main": "server.js",
-    "engines": {
-        "node": "0.8.x"
-    },
-    "dependencies": {
-        "nconf": "0.5.x",
-        "logme": "0.3.x",
-        "pubnub": "*",
-        "node-pusher": "*",
-        "node-hid": "0.1.1"
-    },
-    "devDependencies": {}
+  "author": "Per Ejeklint <ejeklint@me.com>",
+  "name": "weathernode",
+  "description": "Weather data logger compatible with Oregon Scientific USB weather stations",
+  "keywords": [
+    "weather",
+    "HID",
+    "oregon",
+    "WMR100",
+    "WMRS200",
+    "WMR88A",
+    "RMS600A"
+  ],
+  "version": "0.1.0",
+  "repository": {
+    "url": ""
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "0.8.x"
+  },
+  "dependencies": {
+    "nconf": "0.5.x",
+    "logme": "0.3.x",
+    "pubnub": "*",
+    "node-pusher": "*",
+    "node-hid": "0.1.1",
+    "request": "~2.12.0"
+  },
+  "devDependencies": {}
 }

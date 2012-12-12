@@ -1,4 +1,5 @@
 .DS_Store
+.AppleDouble
 /config.json
 logs
 node_modules
