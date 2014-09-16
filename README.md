@@ -10,12 +10,12 @@ This weather data logger is compatible with Oregon Scientific USB weather statio
 * An Oregon Scientific weather station with USB that acts as a HID device, like WMR100, RMS300 or WMRS200
 * [node.js](http://nodejs.org) version >= 0.8 and npm (bundled with node.js)
 * Build tools. On OS X you need to install [Xcode](https://developer.apple.com/xcode/) to build [hidapi](https://github.com/signal11/hidapi)
-* An account at [Cosm](https://cosm.com) if you want to log data to it
+* An account at [Xively](https://xively.com) if you want to log data to it
 * An account at [Pusher](http://pusher.com) or [Pubnub](http://www.pubnub.com) if you want to push real time updates through websockets.
 
 # Installation
 
-Clone this repo, `cd` into it and just do
+If you're on Linux, make sure that libusb.h is available, you might need to install libudev-dev and libusb-1.0-0-dev for this. Then clone this repo, `cd` into it and just do
 
     npm install
 
@@ -27,7 +27,7 @@ Make sure you have the weather station plugged in before running weathernode, th
 
 Or even better, run it with [forever](https://github.com/indexzero/forever) and it will be restarted automagically should it crash. And it will crash, deliberately, at times when the connection to Cosm or Pusher or Pubnub goes down. Here's how I run it:
 
-    forever start -o log.txt --spinSleepTime 1000 server.js
+    forever start -o log.txt --spinSleepTime 1000 index.js
 
 meaning that it starts, logs to log.txt and wait 1000 ms before restarting after a termination. This works very well for me.
 
