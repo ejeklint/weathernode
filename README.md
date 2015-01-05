@@ -25,7 +25,7 @@ Make sure you have the weather station plugged in before running weathernode, th
 
     node index.js
 
-Or even better, run it with [forever](https://github.com/indexzero/forever) and it will be restarted automagically should it crash. And it will crash, deliberately, at times when the connection to Cosm or Pusher or Pubnub goes down. Here's how I run it:
+Or even better, run it with [forever](https://github.com/indexzero/forever) and it will be restarted automagically should it crash. And it will crash, deliberately, at times when the connection to Xively or Pusher or Pubnub goes down. Here's how I run it:
 
     forever start -o log.txt --spinSleepTime 1000 index.js
 
@@ -35,7 +35,7 @@ meaning that it starts, logs to log.txt and wait 1000 ms before restarting after
 
 # What does it log?
 
-**weathernode** logs all available data to Cosm (formerly called Pachube) once every minute. See [weather data at my summer house](https://cosm.com/feeds/43668) for a list of all available measurements.
+**weathernode** logs all available data to Xively (formerly called Cosm (formerly called Pachube)) once every minute. See [weather data at my summer house](https://xively.com/feeds/43668) for a list of all available measurements.
 
 It will also push the same measurements as real time updates to either Pubnub or Pusher, if they are configured, as soon as these values trickle in.
 
